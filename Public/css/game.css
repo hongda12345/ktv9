@@ -1,0 +1,51 @@
+@import "base.css";
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow: hidden;
+    background:url("../../img/gbj.png") center/cover;
+    padding:0 0.24rem;
+    align-items: flex-end;
+}
+header{
+    width:100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+header a:first-of-type{
+    background: url("../../img/sd10.png") center/cover;
+}
+p{
+    font-size: 0.36rem;
+    color: #fff;
+}
+.main{
+    width:100%;
+    height:11.5rem;
+    padding:0.5rem 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-content:space-between;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.main > li{
+    width:3.03rem;
+    height:3.03rem;
+    border-radius: 0.04rem;
+    box-shadow: 0 0.09rem 0.27rem rgba(248,49,158,0.13);
+    text-align: center;
+    line-height: 4.1rem;
+    background: url("../../img/gram_06.png") center -0.5rem/cover;
+}
+.main > li >a{
+    font-size: 0.24rem;
+}

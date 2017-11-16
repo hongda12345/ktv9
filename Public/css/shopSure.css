@@ -1,0 +1,224 @@
+@import "base.css";
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow: hidden;
+    background:url("../../img/gbj.png") center/cover;
+    padding:0 0.24rem;
+    align-items: flex-end;
+}
+header{
+    width:100%;
+    height:1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header a{
+    width: 0.4rem;
+    height: 0.4rem;
+}
+header a:first-of-type{
+    background: url("../../img/at_04.png") no-repeat center/cover;
+}
+header > p{
+    font-size: 0.26rem;
+    color: #ffffff;
+}
+.totalNum{
+    width:100%;
+    height:0.35rem;
+    text-align: center;
+    font-size: 0.23rem;
+    color: #ffffff;
+}
+.wrapper{
+    width:100%;
+    height:9.1rem;
+    background: #ffffff;
+    padding:0.8rem 0.24rem 0;
+    overflow: hidden;
+    position: relative;
+    top:0.36rem;
+    border-radius:0.15rem;
+}
+.scroll{
+    width:100%;
+    height:auto;
+    padding-bottom: 0.5rem;
+}
+.scroll>li{
+    width:100%;
+    height:2rem;
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+.thumb{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumb img{
+    width:2.43rem;
+    height:2rem;
+}
+ul.data{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.2rem;
+    color: #333333;
+    margin: 0.4rem 0;
+}
+li.title{
+    flex:1;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 900;
+    font-size: 0.23rem;
+    color:#ff318e;
+}
+.description{
+    padding-bottom: 0.2rem;
+    background: url("../../img/borderBottom.png") no-repeat left bottom ;
+    margin-bottom: 0.42rem;
+}
+.description >span{
+    margin-right: 0.2rem;
+}
+.data>li:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.option{
+    flex:1;
+    display: flex;
+    align-items: flex-end;
+}
+.option .reduce{
+    width:0.36rem;
+    height:0.36rem;
+    background: url("../../img/subtract.png") no-repeat center/cover;
+}
+.option .count{
+    height:0.36rem;
+    padding:0 0.3rem;
+    border:1px solid #d2d2d2;
+    border-radius: 0.33rem;
+    margin:0 0.15rem;
+}
+.option .plus{
+    width:0.36rem;
+    height:0.36rem;
+    background: url("../../img/plus.png") no-repeat center/cover;
+}
+.price{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.price span{
+    font-size: 0.2rem;
+    font-weight: 800;
+    color:#ff318e;
+}
+.price .itemTotal{
+    font-size:0.4rem ;
+}
+.price>div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.price .sty{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0.03rem;
+}
+.sty>span:first-child{
+    background:#ff318e ;
+    width:0.3rem;
+    height:0.05rem;
+    border-radius: 50rem;
+    margin-right: 0.03rem;
+}
+.sty>span:last-child{
+    background:#ff318e ;
+    width:0.06rem;
+    height:0.06rem;
+    border-radius: 50%;
+
+}
+footer{
+    width:100%;
+    height:2.6rem;
+    padding:  0.12rem 0.24rem;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .all{
+    flex:1;
+    width: 100%;
+    height:1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.all > span{
+    height:0.5rem;
+    font-size:0.48rem;
+    color: #ccd3e2;
+    font-weight:bolder;
+
+}
+.all > ul{
+    height: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+li.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info>span:first-of-type{
+    flex:1;
+    font-size: 0.22rem;
+    color: #ff318e;
+}
+.info>span:last-of-type {
+    flex: 1;
+    font-size: 0.17rem;
+    color: #b8b8b8;
+}
+
+.all > ul >li:last-of-type{
+    flex:1;
+    color: #ff318e;
+    font-size: 0.48rem;
+    font-weight: bolder;
+    align-items: flex-end;
+}
+footer > a{
+    flex:0.8;
+    width: 5.64rem;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    background: url("../../img/button01.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height:0.9rem;
+    border:1px solid #fff;
+
+}

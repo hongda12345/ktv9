@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏列表</title>
+    <script src="/php/ktv/Public/js/rem.js"></script>
+    <script src="/php/ktv/Public/js/jquery.js"></script>
+    <script src="/php/ktv/Public/js/gamelist.js"></script>
+    <link rel="stylesheet" href="/php/ktv/Public/css/gamelist.css">
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()"></a>
+        <p class="title">真心话</p>
+        <a class="change">换一批</a>
+    </header>
+    <ul class="main">
+        <?php for($i=0;$i<count($data);$i++){?>
+        <li><?php echo $data[$i]['gname'];?></li>
+        <?php }?>
+    </ul>
+    <div class="rules">
+        <img src="/php/ktv/img/at_02.png" alt="">
+    </div>
+    <footer>
+        <button class="active" id="1">真心话</button>
+        <button id="2">大冒险</button>
+        <div class="flag"></div>
+    </footer>
+</body>
+</html>

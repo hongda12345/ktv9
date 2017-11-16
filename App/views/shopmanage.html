@@ -1,0 +1,90 @@
+<script src="/php/ktv/Public/js/jquery.js"></script>
+<script src="/php/ktv/Public/js/shopmanage.js"></script>
+<style>
+    input{
+        border:none;
+    }
+</style>
+<?php include 'adminheader.html';?>
+<div class="container">
+    <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist" id="myTab">
+            <li role="presentation" class="active"><a href="#add" aria-controls="home" role="tab" data-toggle="tab" id="add">添加</a></li>
+            <li role="presentation" class=""><a href="#list" aria-controls="profile" role="tab" data-toggle="tab" id="list">查看</a></li>
+            <!--<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">删除</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">修改</a></li>-->
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="add-tab">
+                <form action="javascript:;">
+                    <div class="form-group">
+                        <label>商品名称</label>
+                        <input type="text" class="form-control" id="sname" placeholder="请输入商品名称" name="sname">
+                    </div>
+                    <div class="form-group">
+                        <label>商品类别</label>
+                        <input type="radio" name="type" value="1">酒水
+                        <input type="radio" name="type" value="2">零食
+                    </div>
+                    <div class="form-group">
+                        <label>商品热度</label>
+                        <input type="number" class="form-control" id="hot" placeholder="请输入商品热度" name="hot">
+                    </div>
+                    <div class="form-group">
+                        <label>商品单价</label>
+                        <input type="text" class="form-control" id="price" placeholder="请输入商品单价" name="price">
+                    </div>
+                    <div class="form-group">
+                        <label>缩略图</label>
+                        <input type="file" class="form-control" id="image" multiple>
+                    </div>
+                    <div class="imgBox">
+                        <img src="" alt="" id="thumb">
+                    </div>
+                    <div class="form-group">
+                        <label>图片</label>
+                        <input type="hidden" class="form-control" id="image1" placeholder="" name="thumb">
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>商品描述</label>
+                        <input type="text" class="form-control" id="description" placeholder="请输入商品描述" name="description">
+                    </div>
+                    <div class="form-group">
+                        <label>商品容量</label>
+                        <input type="text" class="form-control" id="capticy" placeholder="请输入商品容量" name="capticy">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="list-tab">
+                <table class="table table-hover">
+                    <!-- On cells (`td` or `th`) -->
+                    <thead>
+                    <tr>
+                        <th class="active">序号</th>
+                        <th class="success">商品名称</th>
+                        <th class="warning">商品类别</th>
+                        <th class="warning">商品热度</th>
+                        <th class="warning">商品单价</th>
+                        <th class="warning">缩略图</th>
+                        <th class="warning">商品描述</th>
+                        <th class="warning">商品容量</th>
+                        <th class="active">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <!--            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">...</div>-->
+        </div>
+    </div>
+</div>

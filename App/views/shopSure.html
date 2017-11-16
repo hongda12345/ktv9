@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <script src="/php/ktv/Public/js/rem.js"></script>
+    <link rel="stylesheet" href="/php/ktv/Public/css/shopSure.css">
+    <script src="/php/ktv/Public/js/jquery.js"></script>
+    <script src="/php/ktv/Public/js/shopSure.js"></script>
+    <script src="/php/ktv/Public/js/iscroll.js"></script>
+</head>
+<body>
+<header>
+    <a href="javascript:history.back()"></a>
+    <p>0505房间已选商品</p>
+    <a></a>
+</header>
+<div class="totalNum"></div>
+<div class="wrapper winelist">
+    <ul class="scroll">
+        <!--<li data="arr[i]">
+            <div class="thumb">
+                <img src="/php/ktv/img/sd3.png" alt="">
+            </div>
+            <ul class="data">
+                <li class="title">
+                    <span class="sname">啤酒</span>
+                </li>
+                <li class="description">
+                    <span>可以让你飞的鸡尾酒</span>
+                    <span>300ml</span>
+                </li>
+                <li>
+                    <div class="option">
+                        <span class="reduce"></span>
+                        <span class="count">0</span>
+                        <span class="plus"></span>
+                    </div>
+                    <div class="price">
+                        <span class="itemTotal">0</span>
+                        <div>
+                            <div class="sty">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>RMB</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li data="arr[i]">
+            <div class="thumb">
+                <img src="/php/ktv/img/sd3.png" alt="">
+            </div>
+            <ul class="data">
+                <li class="title">
+                    <span class="sname">啤酒</span>
+                </li>
+                <li class="description">
+                    <span>可以让你飞的鸡尾酒</span>
+                    <span>300ml</span>
+                </li>
+                <li>
+                    <div class="option">
+                        <span class="reduce"></span>
+                        <span class="count">0</span>
+                        <span class="plus"></span>
+                    </div>
+                    <div class="price">
+                        <span class="itemTotal">98</span>
+                        <div>
+                            <div class="sty">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>RMB</span>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </li>
+        <li data="arr[i]">
+            <div class="thumb">
+                <img src="/php/ktv/img/sd3.png" alt="">
+            </div>
+            <ul class="data">
+                <li class="title">
+                    <span class="sname">啤酒</span>
+                </li>
+                <li class="description">
+                    <span>可以让你飞的鸡尾酒</span>
+                    <span>300ml</span>
+                </li>
+                <li>
+                    <div class="option">
+                        <span class="reduce"></span>
+                        <span class="count">0</span>
+                        <span class="plus"></span>
+                    </div>
+                    <div class="price">
+                        <span class="itemTotal">98</span>
+                        <div>
+                            <div class="sty">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>RMB</span>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </li>
+        <li data="arr[i]">
+            <div class="thumb">
+                <img src="/php/ktv/img/sd3.png" alt="">
+            </div>
+            <ul class="data">
+                <li class="title">
+                    <span class="sname">啤酒</span>
+                </li>
+                <li class="description">
+                    <span>可以让你飞的鸡尾酒</span>
+                    <span>300ml</span>
+                </li>
+                <li>
+                    <div class="option">
+                        <span class="reduce"></span>
+                        <span class="count">0</span>
+                        <span class="plus"></span>
+                    </div>
+                    <div class="price">
+                        <span class="itemTotal">98</span>
+                        <div>
+                            <div class="sty">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>RMB</span>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </li>
+        <li data="arr[i]">
+            <div class="thumb">
+                <img src="/php/ktv/img/sd3.png" alt="">
+            </div>
+            <ul class="data">
+                <li class="title">
+                    <span class="sname">啤酒</span>
+                </li>
+                <li class="description">
+                    <span>可以让你飞的鸡尾酒</span>
+                    <span>300ml</span>
+                </li>
+                <li>
+                    <div class="option">
+                        <span class="reduce"></span>
+                        <span class="count">0</span>
+                        <span class="plus"></span>
+                    </div>
+                    <div class="price">
+                        <span class="itemTotal">98</span>
+                        <div>
+                            <div class="sty">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>RMB</span>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </li>-->
+    </ul>
+</div>
+<footer>
+    <div class="all">
+        <span>TOTAL</span>
+        <ul>
+            <li class="info">
+                <span>总-价</span>
+                <span>RMB</span>
+            </li>
+            <li class="totalPrice"></li>
+        </ul>
+    </div>
+    <a href="" class="shopSure">确认提交</a>
+</footer>
+</body>
+</html>
